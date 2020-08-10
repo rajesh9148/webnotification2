@@ -1,14 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {ServiceWorkerModule} from '@angular/service-worker';
 import { AppComponent } from './app.component';
+import { NotificationComponent } from './notification/notification.component';
+import {HttpClientModule} from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NotificationComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: true }),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

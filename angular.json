@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "webpushnotification2": {
@@ -44,6 +44,7 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
+              "serviceWorker": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "webpushnotification2"
+    }
+  },
+  "defaultProject": "webpushnotification2",
+  "cli": {
+    "analytics": "2f40f81d-9071-4b42-a039-985030532e90"
+  }
 }
