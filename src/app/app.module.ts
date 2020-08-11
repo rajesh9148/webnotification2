@@ -13,7 +13,6 @@ import {HttpClientModule} from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    ServiceWorkerModule.register('/src/ngsw-worker.js', { enabled: true }),
     HttpClientModule
   ],
   providers: [],
